@@ -130,8 +130,8 @@ export const mockAccounts: Account[] = [
       mobileNumber: '***-***-****',
       email: 'z@gmail.com',
       createdOn: '3/21/2025', // m/d/y
-      username: 'z',
-      password: 'z'
+      username: 'ZACH244345',
+      password: 'Zach1978@'
     },
     bank_details: {
       account_type: 'Checking',
