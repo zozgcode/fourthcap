@@ -61,6 +61,14 @@ export default function Dashboard() {
   return (
     <div className="bg-gray-200 h-screen">
       <Header handleLogout={handleLogout} user={user} />
+      <div className="flex flex-col items-center justify-center text-center gap-2 p-5 text-lg font-bold mt-4 bg-white text-black">
+        <span className="text-base flex items-center gap-1">
+          Available Balance
+          {hideBalance ? <FiEyeOff onClick={toggleShowBalance} /> : <FiEye onClick={toggleHideBalance} />}
+        </span>
+
+        <span className="font-bold text-gray-700 text-2xl mt-1">{hideBalance ? '******' : `${formatCurrency(user.bank_details.balance_usd)}`}</span>
+      </div>
       <div className="flex flex-col gap-2 p-5 text-lg font-bold mt-4 bg-white text-black">
         <p>Financial Tools</p>
         <p className="font-normal">Take the work out of staying on top of your finances.</p>
