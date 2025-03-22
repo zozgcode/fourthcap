@@ -65,18 +65,18 @@ export default function Profile() {
               </span>
             </div>
           )}
-          {user.bank_details.account_number && (
+          {/* {user.bank_details.account_number && (
             <div className="w-full flex justify-between items-center">
               <span className="text-[#3f3f3f] font-normal">Account Number</span>
               <span className="text-[#252525] font-medium flex items-center gap-1">{user.bank_details.account_number}</span>
             </div>
-          )}
-          {user.bank_details.routing_number && (
+          )} */}
+          {/* {user.bank_details.routing_number && (
             <div className="w-full flex justify-between items-center">
               <span className="text-[#3f3f3f] font-normal">Routing Number</span>
               <span className="text-[#252525] font-medium flex items-center gap-1">{user.bank_details.routing_number}</span>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
